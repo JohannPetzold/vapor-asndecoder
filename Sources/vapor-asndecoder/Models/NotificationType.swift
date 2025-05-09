@@ -1,0 +1,17 @@
+public enum NotificationType: String, Codable, Sendable {
+    case consumptionRequest = "CONSUMPTION_REQUEST"
+    case didChangeRenewalPref = "DID_CHANGE_RENEWAL_PREF"
+    case didChangeRenewalStatus = "DID_CHANGE_RENEWAL_STATUS"
+    case didfailToRenew = "DID_FAIL_TO_RENEW"
+    case didRenew = "DID_RENEW"
+    case expired = "EXPIRED"
+    case gradePeriodExpired = "GRACE_PERIOD_EXPIRED"
+    case offeredRedeemed = "OFFER_REDEEMED"
+    case priceIncrease = "PRICE_INCREASE"
+    case refund = "REFUND"
+    case refundDeclined = "REFUND_DECLINED"
+    case renewalExtended = "RENEWAL_EXTENDED"
+    case revoke = "REVOKE"
+    case subscribed = "SUBSCRIBED"
+    case test = "TEST"
+}

@@ -1,0 +1,15 @@
+public enum NotificationSubtype: String, Codable, Sendable {
+    case initialBuy = "INITIAL_BUY"
+    case resubscribe = "RESUBSCRIBE"
+    case downgrade = "DOWNGRADE"
+    case upgrade = "UPGRADE"
+    case autoRenewEnabled = "AUTO_RENEW_ENABLED"
+    case autoRenewDisabled = "AUTO_RENEW_DISABLED"
+    case voluntary = "VOLUNTARY"
+    case billingRetry = "BILLING_RETRY"
+    case priceIncrease = "PRICE_INCREASE"
+    case gracePeriod = "GRACE_PERIOD"
+    case billingRecovery = "BILLING_RECOVERY"
+    case pending = "PENDING"
+    case accepted = "ACCEPTED"
+}
