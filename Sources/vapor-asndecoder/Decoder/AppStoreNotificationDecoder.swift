@@ -1,4 +1,4 @@
-import Foundation
+import Vapor
 import JWTKit
 
 public struct AppStoreNotificationDecoder {
@@ -10,7 +10,7 @@ public struct AppStoreNotificationDecoder {
   }
 
   public func decode(
-    signedPayloadData: Data
+    signedPayloadData: ByteBuffer
   ) async throws -> (
     notification: NotificationPayload,
     renewal: RenewalInfoPayload?,
