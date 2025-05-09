@@ -1,4 +1,4 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 6.0
 
 import PackageDescription
 
@@ -6,21 +6,21 @@ let package = Package(
     name: "vapor-asndecoder",
     platforms: [
         .macOS(.v13),
-        .iOS(.v13),
-        .tvOS(.v13),
-        .watchOS(.v6)
+        .iOS(.v16),
+        .tvOS(.v16),
+        .watchOS(.v9)
     ],
     products: [
         .library(
-            name: "vapor-asndecoder",
-            targets: ["vapor-asndecoder"]),
+            name: "ASNDecoder",
+            targets: ["ASNDecoder"]),
     ],
     dependencies: [
         .package(url: "https://github.com/vapor/jwt", from: "5.1.2"),
     ],
     targets: [
         .target(
-            name: "vapor-asndecoder",
+            name: "ASNDecoder",
             dependencies: [
                 .product(name: "JWT", package: "jwt"),
             ]
