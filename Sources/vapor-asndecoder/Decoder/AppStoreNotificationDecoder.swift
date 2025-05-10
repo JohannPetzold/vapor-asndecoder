@@ -27,7 +27,7 @@ public struct AppStoreNotificationDecoder: Sendable {
     /// - Returns: A tuple containing the main notification payload, optional renewal info payload, and optional transaction payload.
     /// - Throws: An error if decoding or signature verification fails.
     public func decode(
-        signedPayloadData: ByteBuffer
+        _ signedPayloadData: ByteBuffer
     ) async throws -> (
         notification: NotificationPayload,
         renewal: RenewalInfoPayload?,
