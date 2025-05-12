@@ -1,4 +1,8 @@
-# VaporAppStoreNotifications
+# ASNDecoder
+
+![Swift 6.0](https://img.shields.io/badge/swift-6.0-orange)
+![Vapor 4](https://img.shields.io/badge/vapor-4.0-blue)
+![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)
 
 A Swift Package for Vapor that simply decodes the raw HTTP body of App Store Server Notification webhooks into strongly‑typed models—leaving routing, storage and business logic entirely up to you.
 
