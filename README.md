@@ -25,7 +25,7 @@ In your `Package.swift` dependencies:
 
 ```swift
 .package(
-  url: "https://github.com/JohannPetzold/vapor-asndecode",
+  url: "https://github.com/JohannPetzold/vapor-asndecoder",
   from: "1.0.0"
 ),
 ```
